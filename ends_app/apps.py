@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class AppendsConfig(AppConfig):
-    name = 'appends'
+    name = 'ends_app'

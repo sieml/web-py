@@ -3,7 +3,7 @@ import os
 import sys
 
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "endspy.settings")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ends_conf_module.settings")
     try:
         from django.core.management import execute_from_command_line
     except ImportError:
