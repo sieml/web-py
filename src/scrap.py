@@ -11,30 +11,8 @@ settings.configure()
 
 
 def main():
-    url = 'https://www.zhihu.com/question/22867272'
+    url = 'https://www.zhihu.com/question/31785374'
 
-    # 感觉这个话题下面美女多
-    my_cookies = {"d_c0": '"ABDAR4n_PAqPTv-ONLWhQl39CMoKQ--05Wc=|1468672210"',
-                  "_zap": "b9456df6-9346-4cb7-ae39-83ce8b85479b",
-                  "_za": "d481f9fb-e7e5-451d-a247-2be5dcb502ca",
-                  "_xsrf": "c932deb936dca94eb0486c98b331d2a3",
-                  "sid": "dq5bbei2",
-                  "q_c1": "51ae6f89182846f78c40f6b8adca30a6|1490371206000|1477132640000",
-                  "l_cap_id": '"YWIyODU4YjQyNDNmNGJjMWFmZWMzOGQ2NzMwZWY1NmY=|1491576336|d9448372656503b31c7814c8f1dd4b50a15ef954"',
-                  "cap_id": '"ZGZlYzBkNDY5M2M0NDYyYjhhODM2Yzc2ZTUyNjk2MjQ=|1491576336|81eac8f4dfc488c62195b95bf2d5b6d915975354"',
-                  "__utma": "51854390.863682907.1468672209.1487475870.1491575719.37",
-                  "__utmb": "51854390.0.10.1491575719",
-                  "__utmc": "51854390",
-                  "__utmz": "51854390.1491575719.37.34.utmcsr=baidu|utmccn=(organic)|utmcmd=organic",
-                  "__utmv": "51854390.100-1|2=registration_date=20140520=1^3=entry_date=20140520=1",
-                  "aliyungf_tc": "AQAAAEU7rR+sMgIAX1tH3skL4vAoHrqV",
-                  "capsion_ticket": '"2|1:0|10:1491576641|14:capsion_ticket|44:YTYzYTNkNjQzODdjNGY0ZGIzNzA1ZjYyMWIxYWZmMDE=|be16c164a7ff3da3ad86c11814ed09c6c3f4ff09798291896b181bbbf35e6bc3"',
-                  "l_n_c": "1",
-                  "r_cap_id": "MzE4YTc0MzEwOTZmNDRmM2FkMDM2ZTk3YzgwM2JkMmE=|1491576336|598e86c3fce3a5d2add8d4d901e82b4db203cb1a",
-                  "s-i": "10",
-                  "s-q": "Python%20%E7%88%AC%E7%9F%A5%E4%B9%8E%E5%A4%B4%E5%83%8F",
-                  "z_c0": "Mi4wQUFDQW0xUXZBQUFBRU1CSGlmODhDaGNBQUFCaEFsVk5VVFFQV1FEeXdfNGV6MHFqZ2wyU2JHWXpXcTF5djY3NEhB|1491576660|7acbbac915a6983fdc85049333555f4a366a38be",
-                  "n_c": "1"}
     headers = {
         'User-Agent': 'User-Agent:Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
         'Host': 'www.zhihu.com',
@@ -42,21 +20,19 @@ def main():
         'Accept-Language': 'zh-CN,en-US;q=0.8,en;q=0.6',
         'Origin': 'https://www.zhihu.com/',
         'Connection': 'keep-alive',
-        'Referer': 'https://www.zhihu.com/question/56748730',
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
         'X-Requested-With': 'XMLHttpRequest',
-        'X-Xsrftoken': 'c932deb936dca94eb0486c98b331d2a3',
-        'Cookie': '__utma=51854390.863682907.1468672209.1487475870.1491575719.37;__utmb=51854390.0.10.1491575719;__utmc=51854390;__utmv=51854390.100-1|2=registration_date=20140520=1^3=entry_date=20140520=1;			__utmz=51854390.1491575719.37.34.utmcsr=baidu|utmccn=(organic)|utmcmd=organic;			_xsrf=c932deb936dca94eb0486c98b331d2a3;		_za=d481f9fb-e7e5-451d-a247-2be5dcb502ca;			_zap=b9456df6-9346-4cb7-ae39-83ce8b85479b;		aliyungf_tc=AQAAAEU7rR+sMgIAX1tH3skL4vAoHrqV;	cap_id="ZGZlYzBkNDY5M2M0NDYyYjhhODM2Yzc2ZTUyNjk2MjQ=|1491576336|81eac8f4dfc488c62195b95bf2d5b6d915975354";capsion_ticket="2|1:0|10:1491576641|14:capsion_ticket|44:YTYzYTNkNjQzODdjNGY0ZGIzNzA1ZjYyMWIxYWZmMDE=|be16c164a7ff3da3ad86c11814ed09c6c3f4ff09798291896b181bbbf35e6bc3";d_c0="ABDAR4n_PAqPTv-ONLWhQl39CMoKQ--05Wc=|1468672210";		l_cap_id="YWIyODU4YjQyNDNmNGJjMWFmZWMzOGQ2NzMwZWY1NmY=|1491576336|d9448372656503b31c7814c8f1dd4b50a15ef954";l_n_c=1;		n_c=1;q_c1=51ae6f89182846f78c40f6b8adca30a6|1490371206000|1477132640000;			r_cap_id="MzE4YTc0MzEwOTZmNDRmM2FkMDM2ZTk3YzgwM2JkMmE=|1491576336|598e86c3fce3a5d2add8d4d901e82b4db203cb1a";s-i=10;	s-q=Python%20%E7%88%AC%E7%9F%A5%E4%B9%8E%E5%A4%B4%E5%83%8F;		sid=dq5bbei2;z_c0=Mi4wQUFDQW0xUXZBQUFBRU1CSGlmODhDaGNBQUFCaEFsVk5VVFFQV1FEeXdfNGV6MHFqZ2wyU2JHWXpXcTF5djY3NEhB|1491579339|b6376a9a195550383bb1019b64d93976a2bf8d42'}
+        'X-Xsrftoken': '5a8f7a85b52ac238cf2f1d54a7e9058f',
+        'Cookie': '_zap=86ba93c5-7f49-4765-9e63-2e1bb1022282; d_c0="AFAA2HMe0gqPTjPUBarztRa2EKs4kV1rItU=|1478679536"; _zap=801fcbdb-b557-448c-999f-ca7ef32add14; _xsrf=5a8f7a85b52ac238cf2f1d54a7e9058f; l_n_c=1; q_c1=b53847a074eb45108067e084ab2b5c51|1494215596000|1494215596000; r_cap_id="MjdjM2ExMTgzZGE5NDZjNmE2ZGI5NDViMTI2ZmUwYWY=|1494215596|3241eb0bf4c7dd2d2d6b3ab552bd6e8c9695f2dc"; cap_id="YjA5OGUxNDNjY2RmNDk5Mzk5NDkyZWNhODQxYmZiMTQ=|1494215596|8f6262e5760dba57abb4d9c59a0e859ad9fc83ac"; l_cap_id="Yjc3OTE4YTM5ZjQ0NDkyNmE2OTNjOWVlYjRkNDQ2ZjM=|1494215596|7469ebe3f01e7ec74ed841abc77b3548b491d0a3"; n_c=1; __utma=51854390.1604238998.1494215563.1494215563.1494215563.1; __utmb=51854390.0.10.1494215563; __utmc=51854390; __utmz=51854390.1494215563.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmv=51854390.110-1|2=registration_date=20140520=1^3=entry_date=20140520=1'
+    }
     i = 1
     for x in xrange(20, 3600, 20):
         # 需要更换条件
-        data = {'start': '0', 'offset': str(x), '_xsrf': 'c932deb936dca94eb0486c98b331d2a3'}
+        data = {'start': '0', 'offset': str(x), '_xsrf': '5a8f7a85b52ac238cf2f1d54a7e9058f'}
         # 知乎用offset控制加载的个数，每次响应加载20
         content = requests.get(url, headers=headers, data=data, timeout=10).text
         # 用post提交form data, 只要双斜杠就行,不要四条
-        imgs = re.findall(
-            '<img class=\\"Avatar AuthorInfo-avatar\\" style=\\"width:38px;height:38px;\\" src=\\"(.*?)_xs.jpg',
-            content)
+        imgs = re.findall('<img src=\\"(.*?)_b.jpg', content)
         print(imgs)
         # 在爬下来的json上用正则提取图片地址，去掉_m为大图
         for img in imgs:

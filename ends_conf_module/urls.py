@@ -20,5 +20,5 @@ from ends_app.views import blog_list, say_hello
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', blog_list),
-    url(r'^blog/detail/', say_hello),
+    url(r'^detail/', say_hello),
 ]

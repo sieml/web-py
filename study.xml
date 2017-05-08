@@ -18,7 +18,8 @@
         D)manage.py->是一个命令行文件，帮助你操作你的Django工程
     1. 本工程操作步骤(http://www.cnblogs.com/benshan/p/4445074.html):
         1.0)可能不能直接点击run:
-        1.1)实战练习http://www.thinksaas.cn/topics/0/435/435907.html
+        1.1)实战练习 http://www.thinksaas.cn/topics/0/435/435907.html
+            A. python manage.py runserver 8801
     2. 打开页面:
         1)http://127.0.0.1:8000/测试是否工作
         2)管理后台http://localhost:8000/admin/
